@@ -1,0 +1,109 @@
+html, body, .container {
+    background-color: white;
+}
+.page-title{
+    margin-bottom: -40px;
+    text-align: center;
+    font-weight: light;
+}
+
+circle:hover{
+    fill: green;
+}
+
+svg g g{
+    fill:#d0d0d0;
+    stroke-width:.17829;
+    stroke:#fff
+}
+
+svg g g:hover{
+    fill: #FCF55F;
+    cursor: pointer;
+}
+
+.container{
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.filter{
+    border: #00394f 1px solid;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.filter-title{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.display{
+    border: #00394f 1px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.histo{
+    border: #00394f 1px solid;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.filter-value{
+    display:flex;
+    align-content: center;
+    text-align: left;
+    width:100%;
+    display: block;
+}
+
+.stat-rect{
+    height:20px;
+    width: 300px;
+    background-image: linear-gradient(to right, #dae9fe 0%, #b695c9 100%);
+    margin-bottom: 10px;
+    display:flex;
+    border: #00394f 1.5px solid;
+}
+
+.min-value{
+    font-size: large;
+    margin-top: -25px;
+    margin-left: 0px;
+    -webkit-text-fill-color:black; /* Will override color (regardless of order) */
+    font-weight: bolder;
+}
+
+.max-value{
+    margin-top: -25px;
+    font-size: large;
+    margin-left: auto;
+    margin-right: 0px;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: #00394f !important;
+    border-color: #00394f !important;
+    color: white !important;
+    margin-bottom: 10px;
+}
