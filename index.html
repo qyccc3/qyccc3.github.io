@@ -2,184 +2,230 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="Assets/index.css">
-        <title>About Me - Yongchen Qian</title>
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yongchen Qian</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/47edf8c4f8.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
-      <nav id="navBar">
-        <!-- Load by JQuery-->
-      </nav>
-      
-      <div class = "container m-5">
-        <div class = "row">
-          <div class = "col-10">
-            <h1>
-              About Me
-            </h1>
-            <br>
-            <h4>
-              I am currently a senior majoring in Computer Science in Emory University. My areas of interests are real-time computer vision, data analysis, web developing and machine learning. I am also a game lover and developer. Another interest of me is I love PC buildings. I have built 5 different computers within the past 2 years.
-            </h4>
-            <br>
-            <div class = "row">
-              <div class = "col">
-                <h5>Programming Skills:</h5>
-                <ul>
-                  <li style="text-align: start;">Python</li>
-                  <li style="text-align: start;">Java</li>
-                  <li style="text-align: start;">C#</li>
-                  <li style="text-align: start;">JavaScript</li>
-                  <li style="text-align: start;">PHP</li>
-                  <li style="text-align: start;">HTML/CSS</li>
-                  <li style="text-align: start;">SQL</li>
-                </ul>
-              </div>
-              <div class = "col">
-                <h5>Tools:</h5>
-                <ul>
-                  <li style="text-align: start;">Unity</li>
-                  <li style="text-align: start;">Git</li>
-                  <li style="text-align: start;">Docker/Kubernetes</li>
-                  <li style="text-align: start;">Matlab</li>
-                </ul>
-              </div>
-              <div class = "col">
-                <h5>Languages:</h5>
-                <ul>
-                  <li style="text-align: start;">Chinese (Native)</li>
-                  <li style="text-align: start;">English (Fluent)</li>
-                  <li style="text-align: start;">Japanese (Intermediate)</li>
-                </ul>
-              </div>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo" alt="">
+                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <li><a href="/resume.pdf" download="">Resume</a></li>
+                        <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Master of Software Engineering</p>
+                    <h1>Hi, I'm <span>Yongchen</span><br>Qian studying at CMU</h1>
+                    <ul id="sideMenu">
+                        <li><a href="https://www.linkedin.com/in/yongchen-qian-578367141/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/qyccc3"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/qian_565/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/jack.qian.902/"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            
-          </div>
-          <div class = "col-2" style="display:flex; justify-content:center;">
-              <div>
-                <ul style="list-style-type:none;">
-                  <li><img src = "Assets/Images/ProfilePhoto.jpg" alt="Avatar"></li>
-                  <li>
-                    <a>Atlanta, GA</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
-                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-                    </svg>
-                  </li>
-                  <li>
-                    <a href = "mailto:yqian54@emory.edu">School Email</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                    </svg>
-                  </li>
-                  <li>
-                    <a href = "mailto:jackqianhhh@gmail.com">Personal Email</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                    </svg>
-                  </li>
-                  <li>
-                    <a href = "https://github.com/qyccc3">Github</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </li>
-                  <li>
-                    <a href = "www.linkedin.com/in/yongchen-qian-578367141">LinkedIn</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-          </div>
-          
         </div>
-      </div> 
-
-
-
-      <div class = "container m-5">
-        <h1>Projects</h1>
-        <div class = "card-deck">
-
-          <div class="row">
-            <div class="col-sm-6" style="padding-top:20px">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">CS 377 Project: Alternate Canvas</h5>
-                  <p class="card-text">A website application mimic the functionality of Canvas that functions as a learning management system for faculties and students.</p>
-                  <a href="project_cs377.html" class="btn btn-dark">View Project</a>
+        <!------------------ About Me ------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/yongchenqian.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello! I'm Yongchen Qian. Currently mastering the intricacies of Software Engineering at Carnegie Mellon University's Silicon Valley campus, I hold a Bachelor of Science in Computer Science from Emory University. As a full-stack software engineer, I seamlessly blend the worlds of front-end and back-end development, and I'm keenly exploring internship and full-time opportunities to further sharpen my skills and contribute to innovative teams.
+                            When I'm not immersed in code or solving software challenges, you can find me on the soccer field or deep in the world of PC building, where precision and performance matter just as much.
+                            Looking forward to connecting and collaborating!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span>
+                                <br>Python
+                                <br>Java
+                                <br>JavaScript
+                                <br>HTML
+                                <br>C
+                            </li>
+                            <li><span>Developer Tools</span>
+                                <br>Unity Engine
+                                <br>Git
+                                <br>Docker
+                                <br>K8s
+                            </li>
+                            <li><span>Databases</span>
+                                <br>MySQL
+                                <br>PostgreSQL
+                                <br>MongoDB
+                            </li>
+                            <li><span>Frameworks</span>
+                                <br>Node.js
+                                <br>Flask
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Expected 2024</span>
+                                <br>Carnegie Mellon University
+                                <br><i>Master of Software Engineering</i>
+                            </li>
+                            <li><span>2019-2023</span>
+                                <br>Emory University
+                                <br><i>Bachelor of Science in Computer Science</i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-sm-6" style="padding-top:20px">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">CS 370 Project: YYDS Casino</h5>
-                  <p class="card-text">An online integrated poker platform that provides 3 different poker games developed using Unity Game Engine.</p>
-                  <a href="project_cs370.html" class="btn btn-dark">View Project</a>
+            </div>
+        </div>
+        <!------------------ Experiences ------------------>
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Experiences</h1>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Teki Drive Inc</h2>
+                        <p>As a Program Manager at the startup project management platform Teki-Drive from Jun to Sep 2023, I led a team of three to launch a platform designed to automate coding tasks and streamline project management. We utilized Flask for the backend, crafted a dynamic frontend using JavaScript, HTML, and CSS, and integrated Firebase for consistent user data storage. Additionally, I oversaw the server's deployment on Google Cloud with Gunicorn and Nginx, ensuring secure SSL/TLS implementation.</p>
+                        <a href="https://teki-drive.com">View Details</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>The Inclusive Brand Project</h2>
+                        <p>Collected approximately 900,000 media items from Instagram and Facebook. Utilized OpenCV, TensorFlow, and ImageAI to create datasets that analyze representation and biases from the top 100 brands over the past decade.</p>
+                        <a href="https://www.youtube.com/watch?v=iK4aAgj0_AY">View Details</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-researchgate"></i>
+                        <h2>MUG: a Multimodal Classification Dataset on Structured Tables with Textual and Visual Fields</h2>
+                        <p>Developed detailed datasets targeting the gaming industry for automated machine learning and multimodal classification. I produced ten benchmark result sets using single-modality models like GBM, MLP, RoBERTa, Electra, Vit, and SWIN, and multi-modality models with AutoGluon and AutoMM. A related paper has been submitted for review to EMNLP 2023.</p>
+                        <a href="https://www.researchgate.net/publication/368304350_MuG_A_Multimodal_Classification_Benchmark_on_Game_Data_with_Tabular_Textual_and_Visual_Fields">View Details</a>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-sm-6" style="padding-top:20px">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Project Helheim</h5>
-                  <p class="card-text">A 2D RPG and action game developed using Unity Game Engine aimed to launch at Steam.</p>
-                  <a href="project_helheim.html" class="btn btn-dark">View Project</a>
+        </div>
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Enhanced Learning & Instructional Technologies at Emory: Cheat Detection</h2>
+                        <p>Under the mentorship of Dr. Davide Fossati from Emory University between Jan to Jun 2022, I utilized OpenCV for live camera input analysis in Java and Python. This feature was integrated with QTest, Emory CS's testing system. I also crafted a Java program using the OpenCV library that identifies faces, notifying the user if no face is detected in the camera feed.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Big Data Mining and Analyzing Technologies</h2>
+                        <p>Under the guidance of Dr. Fan Zhang from MIT between Jul to Sep 2021, I gained expertise in Docker and its associated management tools, including Kubernetes and HELM. I deployed web applications, integrated with a MySQL database, to log IP addresses and access times using Kubernetes. Additionally, I familiarized myself with the Kubernetes management tool operator and its Operator Lifecycle Management.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>2022 KDD Web Development</h2>
+                        <p>As part of a 5-member team for the 2022 KDD Web Development from Oct 2021 to Aug 2022, I played a crucial role in shaping the frontend design of the KDD 2022 website, utilizing JavaScript, HTML, and CSS.</p>
+                        <a href="https://www.kdd.org/kdd2022/">View Details</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Integrated Poker Platform</h2>
+                        <p>Collaborated with a 7-member team to develop an online platform featuring a variety of poker and card games using Unity. The game supports both single-player and multiplayer modes. We incorporated a MySQL database on GCP to facilitate user registration, login, and manage inventories including emojis, backgrounds, cards, and music.</p>
+                        <a href="https://drive.google.com/file/d/1HDvlY2zA7B3DN_qPC8AJhoh-Z35L0M09/view?usp=drive_link">View Details</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>US Housing Market Visualization</h2>
+                        <p>Leaded a 3-member team to visualize the US house price index from 1975-2022, including future projections, using only JavaScript, HTML, and CSS.</p>
+                        <a href="https://drive.google.com/file/d/1ibkF1VsvdEoBuyPSceTxp2zv4rZRvPQS/view?usp=sharing">View Demo</a><br><br>
+                        <a href="https://qyccc3.github.io/USHousePriceIndex/index.html">View Details</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>US Housing Market Prediciton Using Machine Learning</h2>
+                        <p>House sale price prediction using machine learning algorithms: decision tree, linear regression, kNN, kMeans.</p>
+                        <a href="https://github.com/qyccc3/CS334FinalProject">View Details</a>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-sm-6" style="padding-top:20px">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">2022 KDD Website Development</h5>
-                  <p class="card-text">2022 KDD (SIGKDD CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING).</p>
-                  <a href="https://kdd.org/kdd2022/" class="btn btn-dark">View Website</a>
+        </div>
+        <!------------------ Contacts ------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> jackqianhhh@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>408-390-6378</p>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required style="resize: none;"></textarea>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
                 </div>
-              </div>
             </div>
+        </div>
+        <!------------------ Copyright ------------------>
+        <div class="copyright">
+            <p>Credit to Easy Tutorials <i class="fa-solid fa-heart"></i></p>
+        </div>
 
-            <div class="col-sm-6" style="padding-top:20px">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">CS485 Information Visualization</h5>
-                  <p class="card-text">United States house price index visualization from 1975 to 2022 with future forecasts.</p>
-                  <a href="./USHousePriceIndex/index.html" class="btn btn-dark">View Page</a>
-                </div>
-              </div>
-            </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sideMenu");
+            function openMenu(){
+                sidemenu.style.right = "0";
+            }
+            function closeMenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
 
-            <div class="col-sm-6" style="padding-top:20px">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">CS334 Final Project</h5>
-                  <p class="card-text">House sale price prediction using machine learning algorithms: decision tree, linear regression, kNN, kMeans.</p>
-                  <a href="https://github.com/qyccc3/CS334FinalProject" class="btn btn-dark">View Page</a>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div> <!-- row -->
-
-
-
-
-        </div> <!-- card-deck -->
-      </div> <!-- Project container -->
-      
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <script>
-      $(function(){
-        $("#navBar").load("navbar.html");
-      });
-      </script>
-  </body>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxCez-jIRXiWYyLHPwywpfKlAFOFHEJ1-xtFReZLnnMjg-00gdfKJmMxGHvJNI3hNQA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById('msg')
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent!";
+                    setTimeout(function(){ msg.innerHTML = "" }, 5000);
+                    form.reset();
+                }
+                )
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
 </html>
